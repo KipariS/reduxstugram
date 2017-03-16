@@ -4,12 +4,9 @@
 export function incrementLike (postId) {
 	return {
 		type: 'INCREMENT_LIKE',
-		index
+		postId
 	}
 }
-
-
-
 
 // Add Comment
 export function addComment(postId, author, comment) {
@@ -20,8 +17,6 @@ export function addComment(postId, author, comment) {
 		comment
 	}
 }
-
-
 
 // Delete Comment
 export function removeComment(postId, i) {

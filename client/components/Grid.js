@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import Photo from './Photo';
 
 class Grid extends React.Component{
 	
@@ -10,17 +10,13 @@ class Grid extends React.Component{
 	render(){
 		return(
 			<div className='photo-grid'>
-				gfgfhns
+				{this.props.posts.map( ( post, i ) => {
+					return <Photo {...this.props} i={i} key={i} post={post}/>
+				} )}
 			</div>
 		)
 	}
 };
-
-
-
-
-
-
 
 
 

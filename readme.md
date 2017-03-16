@@ -1,4 +1,4 @@
-# Learn Redux
+# Try Redux
 
 A simple React + Redux implementation.
 
