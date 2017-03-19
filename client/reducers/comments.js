@@ -4,7 +4,7 @@
 // 2. Action (info, about whats happend)
 
 function comments( state = [], action) {
-	console.log(state, action);
+	// console.log(state, action);
 	return state;
 }
 
