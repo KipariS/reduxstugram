@@ -10,6 +10,7 @@ export function incrementLike (postId) {
 
 // Add Comment
 export function addComment(postId, author, comment) {
+	console.log("Dispaching addComment!!!");
 	return {
 		type: 'ADD_COMMENT',
 		postId,
@@ -20,6 +21,7 @@ export function addComment(postId, author, comment) {
 
 // Delete Comment
 export function removeComment(postId, i) {
+	console.log("Dispaching removeComment!!!");
 	return {
 		type: 'REMOVE_COMMENT',
 		postId,

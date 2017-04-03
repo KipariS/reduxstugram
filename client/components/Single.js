@@ -19,8 +19,7 @@ class Single extends React.Component{
 			return params.postId == post.code;
 		 } )
 		const post = posts[i];
-		const postComments = comments[params.postId]
-
+		const postComments = comments[params.postId] || [];
 		return(
 			<div className="single-photo">
 				<Photo i={i} post={post} {...this.props} />
